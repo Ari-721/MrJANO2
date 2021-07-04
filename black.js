@@ -29,15 +29,15 @@ const queue = new Map();
 const imdb = require("imdb-api");
 const cooldown = new Set();
 const cdtime = 5;
-const prefix = "b!"
-client.login("")
+const prefix = "$"
+client.login("ODQyNDA2ODc2MjAxMzUzMjc2.YJ02ig.xirl0vXarnvJnyM0Y1BYt3rfJYQ")
 client.on("ready", () => {
   console.log("ALLAH AKBAR");
   console.log("♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔");
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity( `${prefix}help | BLACK SESTAM VERSION 12.4.0 | SERVERS ${client.guilds.cache.size} | Users ${client.users.cache.size} `);
+  client.user.setActivity( `${prefix}help | SERVERS ${client.guilds.cache.size} | Users ${client.users.cache.size} `);
   console.log(`Logined`);
 });
 
@@ -1122,7 +1122,7 @@ client.on("message", async message => {
       
 [Click To Invite](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2080374975)  
 
-**The Prefix is a (b!)**
+**The Prefix is a ($)**
 
 **General**
  botinfo,server,ping,invites,boosts,hightRole,nick,user,avatar,roles,emoji,sug,timer,youtube,google,weather,listemojis,my perms,
@@ -1132,33 +1132,6 @@ client.on("message", async message => {
 ban,kick,mute,unmute,say,embed,tempmute,color,bans,roleinf
 unban,unban all,warn,warnings,lock,unlock,close,open,pin,unpin,rules,settopic,move,help move,delete,mutevoice,unmute voice,
 region
-
-**Config**
-setLevel,setWelcomer,setReponse1,setReponse2,setReponse3,setLog,setAutoRole,setSug,
-toggleLevel [on/off],toggleLeave [on/off],autoreply1 [on/off],autoreply2 [on/off],autoreply3,[on/off],togglelog [on/off],toggleArole [on/off]
-,toggleSug [on/off],infosetLevel,infoAutoRole,infoSug,infoWelcome,infoAutoReponse1,infoAutoReponse2,infoAutoReponse3,infoLeave
-
-
- **Security**
-  anti ban [Number]
- anti kick [Number]
- anti channelD [Number]
- anti channelC [Number]
- anti roleD [Number]
- anti roleC [Number]
- anti time [Number]
- antibots [on/off]
- config
-
- **JUST FOR OWNER SHIP**
-
-**Games**
-slots,rps,8ball
-
- **Fun**
- meme,slap,cuddle,kiss,boom,man,girl
- sad,love,hack,dog
-
 [Support Server](https://discord.gg/zqgxs7RJpQ) 
 
 `);
