@@ -37,7 +37,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity(`${prefix}help | Users ${client.users.cache.size}`);
+  client.user.setActivity(`${prefix}help | ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)};
   console.log(`Logined`);
 });
 
